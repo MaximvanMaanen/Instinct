@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid hero-image"></div>
+    <div class="container body-content">
+        <div class="container hero-text">
+            <h1 class="display-4">Instinct Donation</h1>
+            <p class="lead"></p>
+        </div>
+        @RenderBody()
+        <footer class="text-center fixed-bottom">
+            <hr />
+            <p>&copy; @DateTime.Now.Year - Shinyshark</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
